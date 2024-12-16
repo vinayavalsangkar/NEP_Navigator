@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="/static/survey.css">
+  
+</head>
+<body>
+    <h1>Your Career Journey Starts Here</h1>
+    <form method="POST">
+        <h1>{{ question['question'] }}</h1>
+        <select name="answer" required>
+            <option value="" disabled selected>Select your answer</option>
+            {% for option in question['options'] %}
+                <option value="{{ option }}">{{ option }}</option>
+            {% endfor %}
+        </select>
+        <input type="hidden" name="current_index" value="{{ current_index }}">
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>

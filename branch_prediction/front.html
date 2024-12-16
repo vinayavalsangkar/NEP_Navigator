@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-powered career guidance platform aligned with India's National Education Policy (NEP)">
+    <meta name="keywords" content="Career Guidance, NEP, AI Platform, Education">
+    <meta name="author" content="Aishwarya Vijay Katare">
+    <title>Career Prediction Platform</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa; /* Light shade background */
+            color: #333; /* Text color for contrast */
+            line-height: 1.6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #465a85;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar .logo span {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .navbar nav {
+            display: flex;
+        }
+
+        .navbar nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1em;
+        }
+
+        .navbar nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff; /* White card background */
+            border: 1px solid #ddd; /* Light border */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            height: 200px;
+        }
+
+        .card h3 {
+            color: #444;
+            font-size: 1.5em;
+            margin: 15px 0 10px;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 1em;
+            margin: 0 0 15px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .redirect-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #465a85;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .redirect-btn:hover {
+            background-color: #3b4a70;
+        }
+
+        footer {
+            background: #465a85;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar .logo span {
+                font-size: 1.2em;
+            }
+
+            .navbar nav a {
+                font-size: 0.9em;
+                margin: 0 10px;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.webp" alt="Website Logo">
+            <span>Career Guidance</span>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Vision</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <a href="science.html" style="text-decoration: none; color: inherit;">
+                <img src="Science.jpg" alt="Science Career">
+                <h3>Science</h3>
+                <p>Explore cutting-edge technology, research, and discovery in the world of science!</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="arts.html" style="text-decoration: none; color: inherit;">
+                <img src="Arts.png" alt="Arts Career">
+                <h3>Arts</h3>
+                <p>Discover the world of creativity, culture, and self-expression through arts!</p>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="commerce.html" style="text-decoration: none; color: inherit;">
+                <img src="Commerce.jpg" alt="Commerce Career">
+                <h3>Commerce</h3>
+                <p>Learn about business, economics, and financial strategies for success!</p>
+            </a>
+        </div>
+    </div>
+
+    <button class="redirect-btn" onclick="location.href='careerprediction.html'">Go to Other Page</button>
+
+    <footer>
+        <p>&copy; 2024 AI Career Guidance Platform. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

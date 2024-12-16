@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #1e1e1e, #121212); /* Dark theme gradient */
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin: 20px 0;
+    animation: fadeDown 1.5s ease-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #bb86fc;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #a1a1a1;
+}
+
+/* Main Content Styling */
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Form Styling */
+form {
+    background: #2c2c2c; /* Dark background for form */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 700px;
+    animation: popUp 1.5s ease-out;
+}
+
+form h2 {
+    color: #bb86fc;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+/* Input Styling */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #333;
+    color: #e0e0e0;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #bb86fc;
+    box-shadow: 0 0 8px rgba(187, 134, 252, 0.5);
+}
+
+/* Select Dropdown Styling */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #333;
+    color: #e0e0e0;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus {
+    border-color: #bb86fc;
+    box-shadow: 0 0 8px rgba(187, 134, 252, 0.5);
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background: #bb86fc;
+    color: #121212;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+button:hover {
+    background: #9a6bd8;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Animations */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popUp {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    form h2 {
+        font-size: 1.2rem;
+    }
+
+    input[type="number"],
+    select {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}

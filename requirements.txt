@@ -1,0 +1,15 @@
+creating:-pip install virtualenv
+checking created or not:-virtualenv env
+Before check if you'r pc is new:-Set-ExecutionPolicy unrestricted
+if Showing error go to powershell as administrator.....
+Type :-Set-ExecutionPolicy unrestricted :-type A
+Restart
+Activating virtualenv env:- .\env\Scripts\activate.ps1
+Download Flask:-pip install Flask
+                pip install pandas
+                pip install scikit-learn
+                pip install imbalanced-learn
+                pip install joblib
+Execution:-python .\app7.py 
+
+

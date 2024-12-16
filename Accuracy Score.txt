@@ -1,0 +1,12 @@
+Arts Model:-1)Accuracy with Top Features: 0.704331450094162
+	    2)Mean F1 Score: 0.7035681272180052
+	    3)Overall Training Accuracy: 0.8661008958038661
+	    4)Overall Testing Accuracy: 0.7080979284369114
+Commerce Model:-1)Accuracy with Top Features: 0.7136752136752137
+		2)Mean F1 Score: 0.7192819367354417
+		3)Overall Training Accuracy: 0.9443254817987152
+		4)Overall Testing Accuracy: 0.7222222222222222
+Science Model:-1)Accuracy with Top Features: 0.7412935323383084
+	      2)Mean F1 Score: 0.7578936095137587
+	      3)Overall Training Accuracy: 0.9875311720698254
+	      4)Overall Testing Accuracy: 0.7412935323383084	

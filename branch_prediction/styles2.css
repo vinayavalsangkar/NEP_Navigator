@@ -1,0 +1,48 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+body {
+    background-image: url('https://mayasastrology.com/uploads/free_Consultation_625c06aec8925.jpg');
+    background-size: cover; /* Cover the entire screen */
+    background-repeat: no-repeat;
+    background-position: center;
+}
